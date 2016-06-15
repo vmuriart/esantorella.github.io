@@ -4,6 +4,8 @@ title: Posts
 weight: 2
 ---
 
+Oops, I haven't blogged yet.
+
 {% for post in site.posts %}
 * {{post.date | date_to_string}} &raquo; [ {{ post.title }} ]({{post.url}})
 {% endfor %}
