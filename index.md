@@ -8,5 +8,7 @@ I'm an economics PhD student at Harvard University. My [research]({{ baseurl }}r
 
 In the last few years I've figured out that I like writing code way more than writing papers. I expect to graduate in spring 2017 and move into the private sector to work in data science or statistical computing full-time.
 
+[My husband](http://tbenthompson.com) is real smart.
+
 # Contact information
 Reach me by email at <a href="mailto:elizabeth.santorella@gmail.com">elizabeth.santorella@gmail.com</a>
