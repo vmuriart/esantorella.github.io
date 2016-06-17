@@ -10,5 +10,7 @@ In the last few years I've figured out that I like writing code way more than wr
 
 [My husband](http://tbenthompson.com) is real smart.
 
+I once successfully ingested the clear plastic thing on top of the blender.
+
 # Contact information
 Reach me by email at <a href="mailto:elizabeth.santorella@gmail.com">elizabeth.santorella@gmail.com</a>
