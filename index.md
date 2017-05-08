@@ -4,7 +4,7 @@ title: Home
 ---
 
 # About me
-I'm an economics PhD student at Harvard University. 
+I'm an economics PhD student at Harvard University. This website is out of date.
 
 I once successfully ingested the clear plastic thing from the top of the blender.
 
