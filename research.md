@@ -14,9 +14,9 @@ outcomes: present and future test scores, present and future attendance, and
 high school graduation. Studying the covariance matrix of teacher effects reveals
 the magnitude of teacher effects on each outcome 
 and the relationship between teacher effects on different outcomes
-    while sidestepping the need to estimate individual teacher effects.
+    while sidestepping the need to estimate individual teacher effects.</p>
 
-Although teachers have substantial effects on test
+<p>Although teachers have substantial effects on test
 scores four years in the future, these effects are not highly correlated with
 teacher effects on same-year test scores, implying that the effects of having a
 teacher who raises same-year test scores fades out quickly, and short-term 
@@ -29,7 +29,8 @@ average at improving high school graduation increase graduation rates by 2% to
 </p>
 </li>
 
-<li><p><b>Which value-Added Estimator Works Best and When?</b> <a href='/public/full_chapter2.pdf'>(working paper)</a></p>
+<li><p><b>Which Value-Added Estimator Works Best and When?</b> <a href='/public/full_chapter2.pdf'>(working paper)</a></p>
+
 
 <p>Although a large volume of research has investigated whether
 the identification assumptions of value-added models hold, the statistical
