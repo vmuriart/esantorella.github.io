@@ -29,7 +29,7 @@ average at improving high school graduation increase graduation rates by 2% to
 </p>
 </li>
 
-<li><p><b>Which value-Added Estimator Works Best and When?</b> <a href='/assets/full_chapter2.pdf'>(working paper)</a></p>
+<li><p><b>Which value-Added Estimator Works Best and When?</b> <a href='/public/full_chapter2.pdf'>(working paper)</a></p>
 
 <p>Although a large volume of research has investigated whether
 the identification assumptions of value-added models hold, the statistical
