@@ -6,7 +6,7 @@ title: Research
 My current research focuses on the detection and measurement of individual effects. 
 
 <ul>
-<li><p><b>Teacher Effects on Student Behavior</b> [(working paper)]({{ site.url }}/assets/full_chapter1.pdf)</p>
+<li><p><b>Teacher Effects on Student Behavior</b> [(working paper)]({{ site.url }}/public/full_chapter1.pdf)</p>
 
     
 <p>I estimate the covariance structure of teacher effects on several 
