@@ -3,30 +3,74 @@ layout: page
 title: Research
 ---
 
-My current research focuses on the detection and measurement of individual effects. You can read more about the code that powers it [here]({{ baseurl }}projects).
+My current research focuses on the detection and measurement of individual effects. 
 
 <ul>
-<li><p><b>Teacher Effects on Student Behavior</b>: Working paper coming soonish!</p>
+<li><p><b>Teacher Effects on Student Behavior</b> [(working paper)]({{ site.url }}/assets/full_chapter1.pdf)</p>
 
+    
+<p>I estimate the covariance structure of teacher effects on several 
+outcomes: present and future test scores, present and future attendance, and
+high school graduation. Studying the covariance matrix of teacher effects reveals
+the magnitude of teacher effects on each outcome 
+and the relationship between teacher effects on different outcomes
+    while sidestepping the need to estimate individual teacher effects.
 
-<p>As large school districts adopt test-based teacher evaluation metrics and parents protest the increasing use
-of standardized tests, it is timely to ask whether teacher evaluation systems should expand the use of
-quantitative measures not based on test scores. I examine the
-magnitude and short-term consequences of teacher effects on student attendance. I find that teachers
-have moderate effects on attendance: A teacher who is one standard deviation above average improves the 
-average student's attendance by 0.55 days in elementary school and 0.74 days in middle school.  Teacher effects on
-attendance  are  nearly  uncorrelated  with  teacher  e ects  on  test  scores.   Teacher  effects  on
-attendance appear to be moderately persistent, fading out to 17% to 98% of their original size after
-four years.</p>
+Although teachers have substantial effects on test
+scores four years in the future, these effects are not highly correlated with
+teacher effects on same-year test scores, implying that the effects of having a
+teacher who raises same-year test scores fades out quickly, and short-term 
+teacher effects on test scores do not predict long-term effects well. Teacher
+effects on same-year attendance, by contrast, are highly predictive of longer-term
+attendance. Teacher effects on test scores are only weakly correlated with 
+teacher effects on attendance. Teachers who are one standard deviation above
+average at improving high school graduation increase graduation rates by 2\% to
+8\%, although graduation data is limited.
+</p>
 </li>
+</ul>
+
+<ul>
+<li><p><b>Which value-Added Estimator Works Best and When?</b> [(working paper)]({{ site.url }}/assets/full_chapter2.pdf)</p>
+
+<p>Although a large volume of research has investigated whether
+the identification assumptions of value-added models hold, the statistical
+properties of these estimators are less studied, especially in finite
+samples. In the second chapter, I survey several popular value-added
+estimation procedures. I discuss conditions under which models are identified,
+clarify whether estimators are consistent or unbiased, and derive standard
+errors. I also develop a maximum (quasi-)likelihood estimator. I investigate
+the bias and precision of different estimators in Monte Carlo data and check
+whether estimators give similar answers in real data. My focus is on the 
+portion of variance that is due to variation in teacher quality, but I also
+discuss individual-specific estimates, and ask whether different procedures
+give highly correlated estimates of teacher effects, and whether a procedure
+can reliably identify teachers in the bottom 2\%. Although I use the language
+of teachers, classrooms, and students for clarity, these results extend
+readily to different settings.
+</p>
+</li>
+</ul>
+
+<ul>
 <li><p><b>Bureaucrat Value Added: The Effect of Individual Bureucrats on Local Economic Outcomes in India</b>, 
-with Moya Chin, Jonas Hjort, and Gautam Rao. </p>
+with Jonas Hjort and Gautam Rao. Working paper coming soon! </p>
 
 
-<p>We investigate the influence of individual officers in the Indian Administrative Service on local economic activity. 
-We use two distinct methods from labor and education economics:  the AKM approach,
-which has traditionally been used to estimate the share of variation in wages that is due to firms and
-workers; and the value-added approach, which has traditionally been used to estimate teachers' effects
-on students' test scores.</p>
+<p>We use several value-added estimators to study a
+question relevant to political economy: How much agency do individual 
+bureaucrats have to impact local economic performance? We study
+high-ranking bureaucrats in the Indian Administrative Service, 
+India's national bureaucracy. These bureaucrats, District Collectors,
+District Collectors, who are quasi-randomly assigned to manage the 
+bureaucracy of an Indian district and often transfer to different districts
+in the same state. This setting presents econometric challenges, since we
+have relatively few observations and high-dimensional covariates. By randomly
+permuting bureaucrat names, we show that value-added estimators have strong
+finite-sample biases in this setting. Point estimates suggest that variance in
+District Collector quality accounts for substantial variance in project
+completion and night light intensity. However, randomization inference shows
+that our estimates are in fact insignificant.
+</p>
 </li>
 </ul>
