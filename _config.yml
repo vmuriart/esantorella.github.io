@@ -20,7 +20,7 @@ paginate:         5
 paginate_path: "/Posts/page:num"
 
 # Custom vars
-version:          2.1.0
+version:          3.3.0
 
 github:           
   repo:           https://github.com/esantorella
