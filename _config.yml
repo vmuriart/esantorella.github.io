@@ -15,7 +15,7 @@ baseurl:          /
 
 author:
   name:           'Elizabeth Santorella'
-  url:             http://esantorella.com
+  url:             http://esantorella.com/
 paginate:         5
 paginate_path: "/Posts/page:num"
 
