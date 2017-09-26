@@ -51,7 +51,7 @@ I made $46,572.50 this year. Since I'm filing jointly it's hard to say what
 *I* paid in taxes, but it's about $6,800, leaving an after-tax income of about
 $39,800.
 
-My biggest expense after rent is usually charity, and I usually donate at the end of the year.
+My biggest expense after rent and taxes is usually charity, and I usually donate at the end of the year.
 I took the Giving What We Can Pledge several years ago: I've pledged to donate everything
 I make over $34,000 post-tax, and at least 10% of my income. ($34,000 in 2012
 in 2012 dollars, $35,264 today.) That left me obligated to donate $3,757 in 2016.
