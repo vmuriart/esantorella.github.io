@@ -1,9 +1,16 @@
+---
+layout: page
+title: Yo I heard you like bootstraps
+---
 
-# Yo I heard you like bootstraps
 
 Often an estimator is biased in finite samples. For example, say that we try to
 estimate E[x]^4 by raising the sample mean of x to the fourth power. By Jensen's
 inequality, the estimate will be positively biased.
+We can achieve an asmptotic refinement and reduce the bias of the estimator
+with a bootstrapped bias correction. In case our bootstrap estimate of the
+bias is biased, we can bootstrap a bias correction to the bootstrapped
+bias correction.
 
 For the purpose of illustration I'll draw data N(0, 1), 
 but in general we won't know the data-generating process.
