@@ -10,7 +10,8 @@ inequality, the estimate will be positively biased.
 We can achieve an asmptotic refinement and reduce the bias of the estimator
 with a bootstrapped bias correction. In case our bootstrap estimate of the
 bias is biased, we can bootstrap a bias correction to the bootstrapped
-bias correction.
+bias correction. If your bias correction to the bias correction is biased,
+you can... well, you know.
 
 For the purpose of illustration I'll draw data N(0, 1), 
 but in general we won't know the data-generating process.
