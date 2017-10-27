@@ -54,8 +54,8 @@ identified.</p>
 and study their statistical properties. I discuss conditions under which
 models are identified, clarify whether estimators are consistent or unbiased,
 and derive asymptotic, parametric standard errors. 
-I also develop a maximum (quasi-)likelihood estimator. I investigate
-the bias and precision of different estimators in Monte Carlo data and
+I also develop a maximum (quasi-)likelihood estimator. I 
+confirm theoretical predictios about bias in Monte Carlo data and
 check whether estimators give similar answers in real data.</p>
 
 <p>For clarity, I often use terminology relating to teachers and classrooms
