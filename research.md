@@ -20,12 +20,10 @@ and the relationship between teacher effects on different outcomes
 scores four years in the future, these effects are not highly correlated with
 teacher effects on same-year test scores, implying that the effects of having a
 teacher who raises same-year test scores fades out quickly, and short-term 
-teacher effects on test scores do not predict long-term effects well. Teacher
-effects on same-year attendance, by contrast, are highly predictive of longer-term
-attendance. Teacher effects on test scores are only weakly correlated with 
+teacher effects on test scores do not predict long-term effects well. 
+Teacher effects on test scores are only weakly correlated with 
 teacher effects on attendance. Teachers who are one standard deviation above
-average at improving high school graduation increase graduation rates by 2% to
-8%, although graduation data is limited.
+average at improving high school graduation increase graduation rates by about 5%.
 </p>
 </li>
 
@@ -36,15 +34,14 @@ average at improving high school graduation increase graduation rates by 2% to
 the identification assumptions of value-added models hold, the statistical
 properties of these estimators are less studied, especially in finite
 samples. In the second chapter, I survey several popular value-added
-estimation procedures. I discuss conditions under which models are identified,
-clarify whether estimators are consistent or unbiased, and derive standard
-errors. I also develop a maximum (quasi-)likelihood estimator. I investigate
+estimation procedures and develop a maxium (quasi-)likelihood estimator. 
+I discuss conditions under which models are identified,
+clarify whether estimators are consistent or unbiased, and derive asymptotic, parametric 
+standard errors. I investigate
 the bias and precision of different estimators in Monte Carlo data and check
 whether estimators give similar answers in real data. My focus is on the 
-portion of variance that is due to variation in teacher quality, but I also
-discuss individual-specific estimates, and ask whether different procedures
-give highly correlated estimates of teacher effects, and whether a procedure
-can reliably identify teachers in the bottom 2%. Although I use the language
+portion of variance that is due to variation in teacher quality.
+Although I use the language
 of teachers, classrooms, and students for clarity, these results extend
 readily to different settings.
 </p>
