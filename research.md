@@ -3,7 +3,6 @@ layout: page
 title: Research
 ---
 
-My current research focuses on the detection and measurement of individual effects. 
 
 <ul>
 <li><p><b>Multi-Dimensional Teacher Effects</b> <a href='/public/full_chapter1.pdf'>(working paper)</a></p>
@@ -31,36 +30,32 @@ Although teacher quality is an important determinant of graduation rates and of
     with effects on test scores. I also use Principal Components Analysis to show
     that the correlation matrix of teacher effects can be well-represented by
     three easily interpretable components.</p>
+
+<img src="{{site.url }}{{ site.baseurl }}/public/pca_math.png" alt="First three principal components
+of math teacher effects">
+
 </li>
+
 
 <li><p><b>Which Value-Added Estimator Works Best and When?</b> <a href='/public/full_chapter2.pdf'>(working paper)</a></p>
 
-<p>Value-added estimators have been extensively used to study 
-teachers and other groups.
-These estimators describe how dispersed teachers (or others)
-are in their effects on an outcome: for example, variation in
-teacher quality contributes to about 1% of the variance in student test scores.
-Value-added modeling is also used by school districts
-to rank teachers and make firing decisions. 
-Although a large volume of research has investigated whether and when
-the identification assumptions of value-added models hold 
-the statistical properties of these estimators are less studied,
-especially in finite samples.
-For example, standard errors and hypothesis tests are often 
-unavailable, and parameter estimates can be badly biased even when
-identified.</p>
+<p>As value-added estimation spreads to fields outside
+validation infeasible, estimators that perform
+well without millions of observations are increasingly needed.
+I clarify conditions under which existing methods
+are identified, sign their biases, and derive asymptotic
+    standard errors, and I develop
+a likelihood-based estimator. In simulation,
+the likelihood-based estimator nearly eliminates
+bias without increasing variance. I compare results from each
+estimator on two real datasets: data on elite bureaucrat
+postings and local economic activity in India, and
+a dataset of eighth grade math teachers and test scores in New York City.</p>
 
-<p>In this project, I survey several popular value-added estimation procedures
-and study their statistical properties. I discuss conditions under which
-models are identified, clarify whether estimators are consistent or unbiased,
-and derive asymptotic, parametric standard errors. 
-I also develop a maximum (quasi-)likelihood estimator. I 
-confirm theoretical predictios about bias in Monte Carlo data and
-check whether estimators give similar answers in real data.</p>
+<img src="{{site.url }}{{ site.baseurl }}/public/simulation_Bias_fig.png" alt="Bias as a function of correlation between covariates and teacher effects, from 1000 Monte Carlo simulations">
 
-<p>For clarity, I often use terminology relating to teachers and classrooms
-since value-added modeling is most used for studying teachers. However,
-these results extend readily to different settings.</p>
+<img src="{{site.url }}{{ site.baseurl }}/public/bias_variance.png" alt="Bias and variance of each estimator when correlation =.5, from 1000 Monte Carlo simulations">
+
 
 </li>
 
