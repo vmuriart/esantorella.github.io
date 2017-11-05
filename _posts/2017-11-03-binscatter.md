@@ -7,7 +7,7 @@ tags: Python econometrics Matplotlib data
 ---
 
 This post illustrates use of the Python module 
-[binscatter](https://github.com/esantorella/binscatter, described at https://michaelstepner.com/binscatter/).
+[binscatter](https://github.com/esantorella/binscatter).
 The [Stata package](https://michaelstepner.com/binscatter/) that inspired this module
 has a far more extensive explanation of what a binned scatter plot is and how to
 interpret it.
