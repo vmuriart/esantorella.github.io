@@ -1,5 +1,5 @@
 # Dependencies
-markdown:         kramdown
+markdown:         mruku
 highlighter:      rouge
 gems:             [jekyll-paginate, jekyll-gist]
 

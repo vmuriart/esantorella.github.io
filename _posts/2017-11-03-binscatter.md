@@ -1,3 +1,9 @@
+---
+title: "Binscatter"
+author: Elizabeth Santorella
+use_math: true
+---
+
 This post illustrates use of the Python module 
 [binscatter](https://github.com/esantorella/binscatter, described at https://michaelstepner.com/binscatter/).
 The [Stata package](https://michaelstepner.com/binscatter/) that inspired this module
@@ -91,19 +97,29 @@ data.head()
 </div>
 
 
+In the first plot, we'll break observations into twenty bins by their level of tenure. In the second figure, we'll residualize both wages and tenure using experience, then do a binned scatter plot of residualized wages against residualized tenure.
 
+Why is a residual plot helpful?
 
-In the first plot, we'll break observations into twenty bins by their level of tenure. In the second figure, we'll residualize both wages and tenure using experience, so as to show the relationship of tenure and wages while holding experience constant. Normally, residuals have mean zero, but binscatter recenters the y variable to have its original mean.
+Define alpha, beta, and gamma to be best linear predictor coefficients and $E^*$ to be the best linear predictor function.
+
+$$ E^*[\mathrm{wage}_i | 1, \mathrm{tenure}_i, \mathrm{experience}_i] = \alpha + \beta * \mathrm{tenure}_i + \gamma * \mathrm{experience}_i $$
+
+Let $\tilde{\mathrm{wage}}_i$ and $\tilde{\mathrm{tenure}}_i$ be residuals from regressing wage and tenure on experience. Then
+
+$$E^*[\tilde{\mathrm{wage}}_i | \tilde{\mathrm{tenure}}_i] = \beta * \tilde{\mathrm{tenure}}_i$$
+
+A binned scatter plot of $\tilde{\mathrm{wage}}_i$ against $\tilde{\mathrm{tenure}}_i$ has the slope that we are interested in.
 
 
 ```python
-fig, axes = plt.subplots(2)
-axes[0].binscatter(data, 'wage', 'tenure')
+fig, axes = plt.subplots(1, 2)
+axes[0].binscatter(data['wage'], data['tenure'])
 axes[0].legend()
 axes[0].set_title('No controls')
-axes[1].binscatter(data, 'wage', 'tenure', controls=['experience'])
+axes[1].binscatter(data['wage'], data['tenure'], controls=data['experience'], recenter_y=False)
 axes[1].set_xlabel('Tenure (residualized)')
-axes[1].set_ylabel('Wage (residualized, recentered)')
+axes[1].set_ylabel('Wage (residualized)')
 axes[1].legend()
 axes[1].set_title('Controlling for experience')
 plt.tight_layout()
@@ -111,20 +127,26 @@ plt.show()
 ```
 
 
-![png]({{ site.url }}/binscatter_figs/output_4_1.png)
+![png]({{ site.url }}/binscatter_figs/output_4_0.png)
 
 
-We can recenter x in the same way we recentered y. Doing this makes it visually clear that we are working with much less variation in x after accounting for z, and that the slope is much lower: tenure appears to matter less after accounting for experience.
+
+We can also ask, what would the relationship between tenure and wage look like if everyone had the same level of experience? 
+We can make a binned scatter plot that represents
+
+$$ E[\mathrm{wage}_i \left| \mathrm{tenure}_i = E^*[\mathrm{tenure}_i | \mathrm{experience}_i = \bar{\mathrm{experience}_i}] + \tilde{\mathrm{tenure}}_i, \mathrm{experience}_i = \bar{\mathrm{experience}_i} \right.],$$
+
+by creating a binned scatter plot of $\tilde{\mathrm{wage}}_i + \bar{wage_i}$ against $\tilde{\mathrm{tenure}}_i + \bar{\mathrm{tenure}}_i$.
+
+(The Stata version of binscatter recenters y but not x; the Python version will do the same by default, but has parameters recenter_y and recenter_x.)
 
 
 ```python
-fig, axes = plt.subplots(2, sharex=True, sharey=True)
-axes[0].binscatter(data, 'wage', 'tenure')
+fig, axes = plt.subplots(1, 2, sharey=True, sharex=True)
+axes[0].binscatter(data['wage'], data['tenure'])
 axes[0].legend()
-axes[0].set_ylabel('Wage')
-axes[0].set_ylabel('Tenure')
 axes[0].set_title('No controls')
-axes[1].binscatter(data, 'wage', 'tenure', controls=['experience'], recenter_x=True)
+axes[1].binscatter(data['wage'], data['tenure'], controls=data['experience'], recenter_y=True, recenter_x=True)
 axes[1].set_xlabel('Tenure (residualized, recentered)')
 axes[1].set_ylabel('Wage (residualized, recentered)')
 axes[1].legend()
@@ -135,5 +157,5 @@ plt.show()
 
 
 
-![png]({{ site.url }}/binscatter_figs/output_6_1.png)
+![png]({{ site.url }}/binscatter_figs/output_6_0.png)
 
