@@ -1,7 +1,9 @@
 ---
-title: "Binscatter"
+layout: post
+title: Binscatter
 author: Elizabeth Santorella
 use_math: true
+tags: Python econometrics Matplotlib data
 ---
 
 This post illustrates use of the Python module 

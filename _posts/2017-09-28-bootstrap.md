@@ -1,11 +1,14 @@
 ---
-layout: page
+layout: post
 title: Yo I heard you like bootstraps
+author: Elizabeth Santorella
+use_math: true
+tags: Python econometrics bootstrapping data
 ---
 
 
 Often an estimator is biased in finite samples. For example, say that we try to
-estimate E[x]^4 by raising the sample mean of x to the fourth power. By Jensen's
+estimate $\mathrm{E}[x]^4$ by raising the sample mean of $x$ to the fourth power. By Jensen's
 inequality, the estimate will be positively biased.
 We can achieve an asmptotic refinement and reduce the bias of the estimator
 with a bootstrapped bias correction. In case our bootstrap estimate of the
@@ -13,7 +16,7 @@ bias is biased, we can bootstrap a bias correction to the bootstrapped
 bias correction, for a higher-order asymptotic refinement. If your bias correction to the bias correction is biased,
 you can... well, you know.
 
-For the purpose of illustration I'll draw data N(0, 1), 
+For the purpose of illustration I'll draw data $N(0, 1)$, 
 but in general we won't know the data-generating process.
 
 
@@ -60,8 +63,8 @@ np.mean(estimates)
 
 
 
-The mean estimate is too high, because our estimator is concave. That is, if we draw a vector x,
-then E[g(sample_mean(x))] > E[g(E[x])]. 
+The mean estimate is too high, because our estimator is concave. That is, if we draw $x_1, \dots, x_K$,
+then $\mathrm{E} \left[ g \left( \frac{1}{K} \sum_i x_i \right) \right] > \mathrm{E} \left[ g \left( \mathrm{E}[x] \right) \right]$. 
 
 
 ![png]({{ site.url }}/output_8_0.png)
@@ -69,11 +72,15 @@ then E[g(sample_mean(x))] > E[g(E[x])].
 
 We can estimate a bias correction using the bootstrap. If x(b) is a bootstrap draw from x, then
 
-E[g(mean(x(b)))] - E[g(mean(x))] = E[g(mean(x))] - E[g(E[x])],
+$ \mathrm{E} \left[ g \left( \frac{1}{K} \sum_i x(b)_i \right) \right] - \mathrm{E} \left[ g \left( \frac{1}{K} \sum_i x_i \right) \right] = \mathrm{E} \left[ g \left( \frac{1}{K} \sum_i x_i \right) \right] - \mathrm{E} \left[ g\left( \mathrm{E}[x] \right) \right]$,
 
-up to O(n^(-2)).
+up to $O(n^{-2})$.
 
-Why does this work? For a sufficiently high-dimensional x, the bootstrap distribution of x will be similar to the true distribution of x, but centered at the sample mean of x rather than at zero. Thus, the Taylor expansions of g(mean(x(b))) around g(mean(x)) and of g(mean(x)) around E[x] both have first terms that are zero in expectation and a similar second term, which depends on g''. 
+Why does this work? For a sufficiently high-dimensional x, the bootstrap 
+distribution of x will be similar to the true distribution of x, but centered 
+at the sample mean of x rather than at zero. Thus, the Taylor expansions of 
+g(mean(x(b))) around g(mean(x)) and of g(mean(x)) around $\mathrm{E}[x]$
+both have first terms that are zero in expectation and a similar second term, which depends on $g''$. 
 
 
 ```python

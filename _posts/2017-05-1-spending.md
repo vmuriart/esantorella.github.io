@@ -1,6 +1,8 @@
 ---
-layout: page
+layout: post
 title: Spending audit, 2016
+author: Elizabeth Santorella
+tags: spending personal
 ---
 
 ### Methodology
