@@ -40,14 +40,20 @@ of math teacher effects">
 <li><p><b>Which Value-Added Estimator Works Best and When?</b> <a href='/public/full_chapter2.pdf'>(working paper)</a></p>
 
 <p>As value-added estimation spreads to fields outside
+education, where data sets may be small and experimental
 validation infeasible, estimators that perform
 well without millions of observations are increasingly needed.
 I clarify conditions under which existing methods
 are identified, sign their biases, and derive asymptotic
     standard errors, and I develop
-a likelihood-based estimator. In simulation,
+a likelihood-based estimator. Monte Carlo experiments show that
+the
 the likelihood-based estimator nearly eliminates
-bias without increasing variance. I compare results from each
+bias without increasing variance, and that
+confidence intervals based on the asymptotic distribution of the
+estimator give approximately correct but slightly anti-conservative
+coverage probabilities.
+I compare results from each
 estimator on two real datasets: data on elite bureaucrat
 postings and local economic activity in India, and
 a dataset of eighth grade math teachers and test scores in New York City.</p>
