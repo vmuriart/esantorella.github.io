@@ -4,7 +4,8 @@ title: Home
 ---
 
 # About me
-I'm an economics PhD student at Harvard University.
+I recently finished an economics PhD at Harvard University, where I focused on applied econometrics and education, especially relating to teacher value-added.
+I now develop pricing algorithms at [QuantCo](http://quantco.com).
 
 I once successfully ingested the clear plastic thing from the top of the blender.
 
