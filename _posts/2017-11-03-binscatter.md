@@ -116,10 +116,10 @@ A binned scatter plot of $\tilde{\mathrm{wage}}_i$ against $\tilde{\mathrm{tenur
 
 ```python
 fig, axes = plt.subplots(1, 2)
-axes[0].binscatter(data['wage'], data['tenure'])
+axes[0].binscatter(data['tenure'], data['wage'])
 axes[0].legend()
 axes[0].set_title('No controls')
-axes[1].binscatter(data['wage'], data['tenure'], controls=data['experience'], recenter_y=False)
+axes[1].binscatter(data['tenure'], data['wage'], controls=data['experience'], recenter_y=False)
 axes[1].set_xlabel('Tenure (residualized)')
 axes[1].set_ylabel('Wage (residualized)')
 axes[1].legend()
@@ -145,10 +145,10 @@ by creating a binned scatter plot of $\tilde{\mathrm{wage}}_i + \bar{wage_i}$ ag
 
 ```python
 fig, axes = plt.subplots(1, 2, sharey=True, sharex=True)
-axes[0].binscatter(data['wage'], data['tenure'])
+axes[0].binscatter(data['tenure'], data['wage'])
 axes[0].legend()
 axes[0].set_title('No controls')
-axes[1].binscatter(data['wage'], data['tenure'], controls=data['experience'], recenter_y=True, recenter_x=True)
+axes[1].binscatter(data['tenure'], data['wage'], controls=data['experience'], recenter_y=True, recenter_x=True)
 axes[1].set_xlabel('Tenure (residualized, recentered)')
 axes[1].set_ylabel('Wage (residualized, recentered)')
 axes[1].legend()
