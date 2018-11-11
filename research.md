@@ -7,27 +7,40 @@ title: Research
 <ul>
 <li><p><b>Multi-Dimensional Teacher Effects</b> <a href='/public/full_chapter1.pdf'>(working paper)</a></p>
 
-<p>I estimate the covariance structure of teacher effects on several 
+<p>It is now established that teacher quality, as measured by short-term test
+scores, is an important contributor
+to meaningful long-term student outcomes like income and educational
+attainment. However, easily-measurable short-term outcomes
+may be a poor proxy for meaningful long-term outcomes if teachers' effects go
+beyond what can be easily captured by test scores. In this paper, I
+demonstrate that high school graduation and long-term attendance and test scores
+cannot be predicted well by
+short-term effects. For example, even if teacher effects on contemporaneous
+outcomes were perfectly measured, they would only explain about 3% of the
+variation in teacher effects on high school graduation.</p>
+
+<p>I use data from New York City public schools to 
+estimate the covariance structure of teacher effects on several 
 outcomes: present and future test scores, present and future attendance, and
 high school graduation. Studying the covariance matrix of teacher effects reveals
 the magnitude of teacher effects on each outcome 
 and the relationship between teacher effects on different outcomes
-    while sidestepping the need to estimate individual teacher effects.</p>
+while sidestepping the need to estimate individual teacher effects.</p>
 
 <p> Teachers have substantial effects on high school graduation, and on test
-    scores and attendance four years in the future. Students of a teacher who 
-    is one standard deviation above average at improving graduation rates
+    scores and attendance four years in the future. Students of a teacher  
+    one standard deviation above average at improving graduation rates
     are 5 percentage points more likely to graduate high school.
-Although teacher quality is an important determinant of graduation rates and of
-    future test scores and attendance, long-term effects
-    cannot be predicted well by short-term effects. For example, even if teacher effects
-    on contemporaneous outcomes were perfectly measured, they would only
-    explain about 3% of the variance in teacher effects on high school graduation.
+Although teacher quality is an important determinant of the
+long-term effects I observe, long-term effects
+    cannot be predicted well by short-term effects. 
+    
     My results also suggest that teacher effects on attendance could be an
-    important supplement to score-based measures of teacher value-added.
-    Teachers who improve attendance tend to improve high school graduation
-    rates. However, teacher effects on attendance are only weakly correlated
-    with effects on test scores. I also use Principal Components Analysis to show
+    important supplement to score-based measures of teacher value-added,
+    since teachers.
+    who improve attendance tend to improve high school graduation
+    rates, while attendance effects are only weakly correlated
+    with test score effects. I also use Principal Components Analysis to show
     that the correlation matrix of teacher effects can be well-represented by
     three easily interpretable components.</p>
 
