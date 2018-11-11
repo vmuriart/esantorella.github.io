@@ -6,7 +6,7 @@ title: Home
 # About me
 
 I'm an economist, data scientist, and machine learning algorithm developer at [QuantCo](http://quantco.com), where I build pricing solutions.
-I recently finished an economics PhD in the fields of econometrics and public economics
+I did an economics PhD in the fields of econometrics and public economics
 at Harvard University. I focused on
 methodological issues in evaluating teacher quality.
 
